@@ -66,7 +66,7 @@ export class gamificationScene extends Scene {
         this.input.keyboard.on("press", (event) => {
             if(event.key == Keys.Enter){
                 this.fadeOutElement(this.elementoHTML)
-                engine.goToScene("exposicao")
+                engine.goToScene("expoScene")
             }
         })
 }
