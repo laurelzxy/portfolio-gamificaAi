@@ -1,4 +1,4 @@
-import { Actor, Color, Engine, Keys, vec } from "excalibur";
+import { Actor, CollisionType, Color, Engine, Keys, vec } from "excalibur";
 
 
 export class Player extends Actor {
@@ -12,7 +12,8 @@ export class Player extends Actor {
             width: 32,
             height: 32,
             name: "Jogador",
-            color: Color.Red
+            color: Color.Red,
+            collisionType: CollisionType.Active
         });
 
     }
@@ -40,7 +41,7 @@ export class Player extends Actor {
                 case Keys.W:
                     // Mover para cima
 
-                    this.vel.y= -this.velocidade
+                    this.vel.y = -this.velocidade
                     break;
 
                 case Keys.Down:
@@ -48,7 +49,7 @@ export class Player extends Actor {
                     // Mover para baixo 
                     // Define a velocidade y para positiva, que significa 
                     // movimentar o player para baixo 
-                    this.vel.y= this.velocidade
+                    this.vel.y = this.velocidade
                     break;
 
                 default:
@@ -65,17 +66,17 @@ export class Player extends Actor {
             // Fazer o player parar ao soltar as teclas de movimentacao 
             // Parar movimentacap lateral ao soltar as teclas de movimentacao lateral 
 
-            if(
+            if (
                 event.key == Keys.A ||
                 event.key == Keys.Left ||
                 event.key == Keys.D ||
-                event.key == Keys.Right 
+                event.key == Keys.Right
             ) {
                 // Zerar velocidade horizontal 
                 this.vel.x = 0
             }
             // Parar movimentacap lateral ao soltar as teclas de movimentacao lateral 
-            if( 
+            if (
                 event.key == Keys.W ||
                 event.key == Keys.Up ||
                 event.key == Keys.S ||
@@ -89,6 +90,6 @@ export class Player extends Actor {
 
     }
 
-    
+
 
 }
