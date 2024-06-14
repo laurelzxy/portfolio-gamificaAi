@@ -29,7 +29,7 @@ export class expoScene extends Scene {
         })
 
         // Definir zoom da camera para aumentar um pouco a vizualização
-        this.camera.zoom = 1.2
+        this.camera.zoom = 1.1
 
         // Carregar spawn point do jogador 
         let spawnPoint = tiledMap.getObjectsByName("player_spawn")[0]
@@ -38,7 +38,7 @@ export class expoScene extends Scene {
         let Jogador = new Player(vec(spawnPoint.x + offsetX, spawnPoint.y + offsetY))
 
         // Define z=index do player ,ultil se algum outro elemento ficar "por cima" 
-        Jogador.z = 2
+        Jogador.z = 3
 
         // adicionar player na cena 
         this.add(Jogador)
@@ -71,7 +71,7 @@ export class expoScene extends Scene {
 
         // Focar a camera na cena 
         this.camera.strategy.lockToActor(Jogador)
-        this.camera.zoom = 1
+        this.camera.zoom = 2
 
         // Adiconar colisao com cada objeto 
         // Pegar a camada de objeto colisores 
