@@ -3,9 +3,11 @@ import { TiledResource, TilesetResource } from "@excaliburjs/plugin-tiled";
 
 
 import sword from "./images/sword.png";
-import logo from "./images/logo.png"
-import logo2 from "./images/logo2.png"
-import imagem from "./images/robo.png"
+import logo from "./images/logo.png";
+import logo2 from "./images/logo2.png";
+import imagem from "./images/robo.png";
+import Npc1 from "./images/Npc1.png";
+
 
 import pngTilesetPath from "./maps/Room_Builder_32x32.png?url"
 
@@ -24,6 +26,10 @@ export const Resources = {
   Logo2: new ImageSource(logo2),
   playerSpritePath: new ImageSource(playerSpritePath, { filtering:  ImageFiltering.Pixel }),
   Imagem: new ImageSource(imagem),
+  Npc1: new ImageSource(Npc1),
+
+
+
   Mapa: new TiledResource(tmxMapaPath, {
     pathMap: [
       {path:"showroom_map.tmx", output: tmxMapaPath },
