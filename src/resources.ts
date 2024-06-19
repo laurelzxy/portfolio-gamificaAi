@@ -1,4 +1,4 @@
-import { ImageFiltering, ImageSource, Loader } from "excalibur";
+import { ImageFiltering, ImageSource, Loader, Sound } from "excalibur";
 import { TiledResource, TilesetResource } from "@excaliburjs/plugin-tiled";
 
 
@@ -7,6 +7,11 @@ import logo from "./images/logo.png";
 import logo2 from "./images/logo2.png";
 import imagem from "./images/robo.png";
 import Npc1 from "./images/Npc1.png";
+import Npc2 from "./images/Npc2.png";
+import Npc3 from "./images/Npc3.png";
+
+import ritimada from"./sound/ritmada_zelda.mp3"
+import classica from "./sound/zelda.mp3"
 
 
 import pngTilesetPath from "./maps/Room_Builder_32x32.png?url"
@@ -27,8 +32,11 @@ export const Resources = {
   playerSpritePath: new ImageSource(playerSpritePath, { filtering:  ImageFiltering.Pixel }),
   Imagem: new ImageSource(imagem),
   Npc1: new ImageSource(Npc1),
-
-
+  Npc2: new ImageSource(Npc2),
+  Npc3: new ImageSource(Npc3),
+  
+RitmadaBGM: new Sound(ritimada),
+ClassicoBGM: new Sound(classica),
 
   Mapa: new TiledResource(tmxMapaPath, {
     pathMap: [
@@ -40,6 +48,8 @@ export const Resources = {
       {path: "tileset_biblioteca.tsx", output: tsxBiblioteca},
     ]
   })
+
+
   
 } as const;
 

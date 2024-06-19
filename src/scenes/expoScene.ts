@@ -16,6 +16,13 @@ export class expoScene extends Scene {
         // ativar o modo de Debug 
         engine.toggleDebug()
 
+        // Carregar musica
+        let musicaFundo = Resources.RitmadaBGM
+
+        // Configurar musicas para executar 
+        musicaFundo.loop = true
+        musicaFundo.play(0.5)
+
         // Carregar o mapa 
         let tiledMap = Resources.Mapa
 
