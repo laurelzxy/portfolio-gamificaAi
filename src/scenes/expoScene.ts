@@ -57,24 +57,25 @@ export class expoScene extends Scene {
         // Configurar NPCs
         let npcA = new Npc(
             vec(npcSpawnPointA.x + offsetX, npcSpawnPointA.y + offsetY),
-            Color.fromRGB(67, 187, 243),
-            "NpcA"
+            npcSpawnPointA.tiledObject.name!
+            
         )
         let npcB = new Npc(
             vec(npcSpawnPointB.x + offsetX, npcSpawnPointB.y + offsetY),
-            Color.fromRGB(4, 227, 84),
-            "NpcB"
+            npcSpawnPointB.tiledObject.name!
         )
         let npcC = new Npc(
             vec(npcSpawnPointC.x + offsetX, npcSpawnPointC.y + offsetY),
-            Color.fromRGB(246, 136, 19),
-            "NpcC"
+            npcSpawnPointC.tiledObject.name!
         )
 
         // Adicionar os Npcs 
         this.add(npcA)
         this.add(npcB)
         this.add(npcC)
+        npcA.z = 4
+        npcB.z = 4
+        npcC.z = 4
 
         // Focar a camera na cena 
         this.camera.strategy.lockToActor(Jogador)

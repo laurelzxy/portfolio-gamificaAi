@@ -63,7 +63,7 @@ export class caseScene extends Scene{
             this.textoDaCena = "Essa é a descrição do case a"
 
         // Mesa A detectada
-        this.elementoTexto!.innerHTML = `<h2> laura <h2>
+        this.elementoTexto!.innerHTML = `<h2> Case 1<h2>
         <p>Nossa empresa cria soluções de gamificação personalizadas para empresas de todos os tamanhos e setores,
           usando inteligência artificial e design de jogos para desenvolver estratégias interativas que melhoram a
           experiência do usuário e impulsionam resultados. Acreditamos no poder dos jogos e da tecnologia para engajar
@@ -83,7 +83,7 @@ export class caseScene extends Scene{
     if (this.objetoInteracao.nomeDaMesa==  "mesa_strand_b") {
             this.textoDaCena = "Essa é a descrição do case b"
         
-        this.elementoTexto!.innerHTML = `<h2> Nossa empresa ela e criada paraaaa <h2>
+        this.elementoTexto!.innerHTML = `<h2> Case 2 <h2>
         <p>Nossa empresa cria soluções de gamificação personalizadas para empresas de todos os tamanhos e setores,
           usando inteligência artificial e design de jogos para desenvolver estratégias interativas que melhoram a
           experiência do usuário e impulsionam resultados. Acreditamos no poder dos jogos e da tecnologia para engajar
@@ -103,7 +103,7 @@ export class caseScene extends Scene{
 
         if (this.objetoInteracao.nomeDaMesa ==  "mesa_strand_c") {
             this.textoDaCena = "Essa é a descrição do case c"
-            this.elementoTexto!.innerHTML = `<h2> Nossa empresa tem objetivo <h2>
+            this.elementoTexto!.innerHTML = `<h2> Case 3 <h2>
             <p>Nossa empresa cria soluções de gamificação personalizadas para empresas de todos os tamanhos e setores,
           usando inteligência artificial e design de jogos para desenvolver estratégias interativas que melhoram a
           experiência do usuário e impulsionam resultados. Acreditamos no poder dos jogos e da tecnologia para engajar
